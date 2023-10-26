@@ -4,3 +4,39 @@ body {
 	color: #2C3E50; /* Gunmetal rather than black or 444444 - Charcoal */
 	font-family: 'Montserrat', 'Arial', sans-serif; /* Monserrat is great, if it fails to load get Arial, and if THAT fails, get any sans-serif */
 }
+
+/* Header style */
+.header {
+	background-color: #4169E1; /* A happy royal blue */
+	color: #DAA520; /* a soft gold to compliment the royalness of blue */
+	padding: 15px;
+	text-align: center;
+}
+
+/* button styles */
+.button-primary {
+	background-color: #4169E1;
+	color: #DAA520;
+	border: none;
+	padding: 10pt 15pt;
+	cursor: pointer;
+	border-radius: 3pt;
+}
+
+.button-emphasis {
+	background-color: #8B0000;
+	color: #DAA520;
+	border: none;
+	padding: 10pt 15pt;
+	cursor: pointer;
+	border-radius: 3pt;
+}
+
+.footer {
+	background-color: #98FF98;
+	color: #DAA520;
+	border: none;
+	padding: 10pt 15pt;
+	cursor: pointer;
+	border-radius: 3pt;
+}
