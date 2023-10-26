@@ -40,3 +40,7 @@ body {
 	cursor: pointer;
 	border-radius: 3pt;
 }
+
+.rounded {
+	border-radius: 5pt;
+}
