@@ -32,6 +32,12 @@ body {
 	border-radius: 3pt;
 }
 
+.roundedHeaderImage {
+	width: 100pt;
+	height: 100pt;
+	border-radius: 5pt;
+}
+
 .footer {
 	background-color: #98FF98;
 	color: #DAA520;
@@ -39,8 +45,4 @@ body {
 	padding: 10pt 15pt;
 	cursor: pointer;
 	border-radius: 3pt;
-}
-
-.rounded {
-	border-radius: 5pt;
 }
