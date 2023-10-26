@@ -1,0 +1,6 @@
+/* General styles */
+body {
+	background-color: #D3D3DE; /* Grey is good. */
+	color: #2C3E50; /* Gunmetal rather than black or 444444 - Charcoal */
+	font-family: 'Montserrat', 'Arial', sans-serif; /* Monserrat is great, if it fails to load get Arial, and if THAT fails, get any sans-serif */
+}
