@@ -36,6 +36,13 @@ body .ui.segment {
 	cursor: pointer;
 	border-radius: 3pt;
 }
+.button-primary a {
+	color: #DAA520;
+	text-decoration: none;
+}
+.button-primary a:hover, .button-primary a:active {
+	color: #8B0000; /* B8860B could be good too -- dark goldenroad for my soft gold */
+}
 
 .button-emphasis {
 	background-color: #8B0000;
