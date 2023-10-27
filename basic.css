@@ -39,7 +39,7 @@ body, html {
 .rounded-header-image {
 	width: 100pt;
 	height: 100pt;
-	border-radius: 5pt;
+	border-radius: 20pt;
 }
 
 .footer {
