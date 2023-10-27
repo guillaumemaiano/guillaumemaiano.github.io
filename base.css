@@ -4,9 +4,13 @@ body {
 	color: #2C3E50; /* Gunmetal rather than black or 444444 - Charcoal */
 	font-family: 'Montserrat', 'Arial', sans-serif; /* Monserrat is great, if it fails to load get Arial, and if THAT fails, get any sans-serif */
 }
+h1, h2, h3, h4, h5, h6 {
+	/* Serif fonts help with adding a hint of distinction and formality to headers and titles -- or at least that's what I learned back in the Code School days */
+	font-family: 'Merriweather', Times, serif; /* Like with Arial, if loading Times fails, I guess there is no serif available at all */
+}
 
 body, html {
-	height: 100%; /* Froce height to try to pin the bottom menu at the bottom */
+	height: 100%; /* Force height to try to pin the bottom menu at the bottom */
 }
 
 /* Header style */
