@@ -15,6 +15,8 @@
     <link href='https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700@display=swap' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css2?family=Merriweather:wght@400;500;600;700@display=swap'
         rel='stylesheet'>
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/default.min.css''
+        rel='stylesheet'>
     <link rel="stylesheet" href="base.css">
 </head>
 
@@ -52,6 +54,8 @@
         </div>
         </li>
         </ul>
+        <h2>Code test</h2>
+        <pre><code class="Swift">let thereBe = "code"</code></pre>
     </div>
     <div class="ui footer green segment ">
         <a href="http://github.com/guillaumemaiano">Get to my Github</a>
@@ -61,7 +65,9 @@
     <script src='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js'></script>
     <!-- Highlighting is a major component of readability in tech blogs -->
     <script src='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js'></script>
-
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {hljs.highlightAll();});
+    </script>
 </body>
 
 </html>
