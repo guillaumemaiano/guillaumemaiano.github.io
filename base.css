@@ -9,6 +9,8 @@ body {
 
 body, html {
 	height: 100%; /* Force height to try to pin the bottom menu at the bottom */
+	margin: 0;
+	padding:0;
 }
 
 h1, h2, h3, h4, h5, h6 {
