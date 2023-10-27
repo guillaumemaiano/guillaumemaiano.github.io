@@ -44,6 +44,14 @@ body .ui.segment {
 	color: #8B0000; /* B8860B could be good too -- dark goldenroad for my soft gold */
 }
 
+.footer .button-primary a {
+	color: #DAA520;
+	text-decoration: none;
+}
+.footer .button-primary a:hover, .footer .button-primary a:active {
+	color: #8B0000; /* B8860B could be good too -- dark goldenroad for my soft gold */
+}
+
 .button-emphasis {
 	background-color: #8B0000;
 	color: #DAA520;
@@ -76,6 +84,16 @@ body .ui.segment {
 
 .pusher .content {
 	flex:1;
+}
+
+.ui .segment.footer > .ui.grid > .column {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.ui .segment.footer > .ui.grid {
+	margin-left: 0;
+	margin-right: 0;
 }
 
 *, *:before, *:after {
