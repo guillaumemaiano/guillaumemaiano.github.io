@@ -104,6 +104,11 @@ body .ui.button.button-primary a:hover, body .ui.button.button-primary a:active 
 	margin-right: 0;
 }
 
+.ui .footer.segment {
+	background: none;
+	border: none;
+}
+
 *, *:before, *:after {
 	box-sizing: border-box;
 }
