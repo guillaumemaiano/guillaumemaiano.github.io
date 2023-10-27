@@ -13,6 +13,9 @@ body, html {
 	height: 100%; /* Force height to try to pin the bottom menu at the bottom */
 }
 
+body .ui.segment {
+	background-color: #E8E8ED; /* I don't want the base white of Semantic */
+}
 /* Header style */
 .header {
 	background-color: #4169E1; /* A happy royal blue */
