@@ -1,0 +1,7 @@
+{{ define "main"}}
+<h1>Tout ce que j'ai écrit</h1>
+{{ range .Site.RegularPages}}
+<h2><a href="{{ .RelPermalink}}">{{.Title}}</a></h2>
+<p>{{.Summary}}</p>
+{{end}}
+{{end}}

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>{{.Site.Title}}</title>
+<meta name="viewport" content="width:device-width, initial-scale=1">
+{{ partial "head.html" . }}
+</head>
+<body>
+{{ partial "header.html" . }}
+{{ block "main" .}}
+{{ partial "footer.html" . }}
+{{ partial "scripts.html" . }}
+</body>
+</html>
