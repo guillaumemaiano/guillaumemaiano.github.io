@@ -1,0 +1,116 @@
+/* General styles */
+body {
+	background-color: #D3D3DE; /* Grey is good. */
+	color: #2C3E50; /* Gunmetal rather than black or 444444 - Charcoal */
+	font-family: 'Montserrat', 'Arial', sans-serif; /* Monserrat is great, if it fails to load get Arial, and if THAT fails, get any sans-serif */
+	display: flex;
+	flex-direction: column;
+}
+
+body, html {
+	height: 100%; /* Force height to try to pin the bottom menu at the bottom */
+	margin: 0;
+	padding:0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	/* Serif fonts help with adding a hint of distinction and formality to headers and titles -- or at least that's what I learned back in the Code School days */
+	font-family: 'Merriweather', Times, serif; /* Like with Arial, if loading Times fails, I guess there is no serif available at all */
+}
+
+body .ui.segment {
+	background-color: #E8E8ED; /* I don't want the base white of Semantic */
+}
+/* Header style */
+.header {
+	background-color: #4169E1; /* A happy royal blue */
+	color: #DAA520; /* a soft gold to compliment the royalness of blue */
+	padding: 15px;
+	text-align: center;
+}
+
+/* button styles */
+.button-primary {
+	background-color: #4169E1;
+	color: #DAA520;
+	border: none;
+	padding: 10pt 15pt;
+	cursor: pointer;
+	border-radius: 3pt;
+}
+.button-primary a {
+	color: #DAA520;
+	text-decoration: none;
+}
+.button-primary a:hover, .button-primary a:active {
+	color: #8B0000; /* B8860B could be good too -- dark goldenroad for my soft gold */
+}
+
+.footer .button-primary a {
+	color: #DAA520;
+	text-decoration: none;
+}
+.footer .button-primary a:hover, .footer .button-primary a:active {
+	color: #8B0000; /* B8860B could be good too -- dark goldenroad for my soft gold */
+}
+
+body .ui.button.button-primary a {
+	color: #DAA520;
+	text-decoration: none;
+}
+body .ui.button.button-primary a:hover, body .ui.button.button-primary a:active {
+	color: #8B0000; /* B8860B could be good too -- dark goldenroad for my soft gold */
+}
+
+.button-emphasis {
+	background-color: #8B0000;
+	color: #DAA520;
+	border: none;
+	padding: 10pt 15pt;
+	cursor: pointer;
+	border-radius: 3pt;
+}
+
+.rounded-header-image {
+	width: 100pt;
+	height: 100pt;
+	border-radius: 20pt;
+}
+
+.footer {
+	background-color: #98FF98;
+	color: #DAA520;
+	border: none;
+	padding: 10pt 15pt;
+	cursor: pointer;
+	border-radius: 3pt;
+}
+
+.pusher.flex-container {
+	display:flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.pusher .content {
+	flex:1;
+}
+
+.ui .segment.footer > .ui.grid > .column {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.ui .segment.footer > .ui.grid {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.ui.footer > .segment {
+	background: none;
+	border: none;
+}
+
+*, *:before, *:after {
+	box-sizing: border-box;
+}
