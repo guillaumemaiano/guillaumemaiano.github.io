@@ -8,7 +8,11 @@
 <body>
 {{ partial "header.html" . }}
 {{ block "main" .}} {{end}}
+{{if .IsHome}}
 {{ partial "footer.html" . }}
+{{else}}
+{{ partial "footer-inner.html" . }}
+{{end}}
 {{ partial "scripts.html" . }}
 </body>
 </html>

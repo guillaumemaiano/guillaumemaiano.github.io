@@ -9,5 +9,19 @@
         document.addEventListener('DOMContentLoaded', (event) => { hljs.highlightAll(); });
     </script>
     <script>
-        document.addEventListener('DOMContentLoaded', (event) => { $('.footermenu .item').tab(); });
+        document.addEventListener('DOMContentLoaded', (event) => {
+            var fragment = window.location.hash;
+            // if (fragment) {
+            //     console.log(fragment.substring(1));
+            // }
+            $('.footermenu .item').tab();
+            // if (fragment) {
+            //     console.log(fragment.substring(1));
+            // }
+            if (fragment) {
+                //$('.footermenu .item[data-tab="' + fragment.substring(1) +'"]').tab('show');
+                //$('.footermenu .item[data-tab="'+ fragment.substring(1)+'"]').tab();
+                $('.footermenu .item').tab('change tab', fragment.substring(1));
+            }
+    });
     </script>
