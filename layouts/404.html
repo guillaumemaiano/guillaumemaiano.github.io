@@ -5,11 +5,11 @@
     <title>GEMs on Gitpages</title>
     <meta name="viewport" content="width:device-width, initial-scale=1">
     <!-- Favicons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="48x48" href="/assets/gem.icns">
-    <link rel="manifest" href="/assets/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ "assets/apple-touch-icon.png" | absURL}}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ "assets/favicon-32x32.png" | absURL}}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ "assets/favicon-16x16.png" | absURL}}">
+    <link rel="icon" type="image/png" sizes="48x48" href="{{ "assets/gem.icns" | absURL}}">
+    <link rel="manifest" href="{{ "assets/site.webmanifest" | absURL}}">
     <!-- CSS  -->
     <!-- Semantic UI first, so that it gets tuned by the rest -->
     <link rel="stylesheet" href='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css'>
@@ -20,7 +20,7 @@
 <body class="Site">
     <div class="ui inverted blue segment header">
         <h1>404</h1>
-        <img class="rounded-header-image" src="assets/GEM.webp" alt="a logo with colors and my acronym" width="120"
+        <img class="rounded-header-image" src="{{ "assets/GEM.webp" | absURL}}" alt="a logo with colors and my acronym" width="120"
             height="120">
     </div>
     <div class="pusher flex-container">
@@ -28,7 +28,7 @@
             <div class="ui grid stackable">
                 <div class="row">
                     <div class="four wide column">
-                        <img class="rounded-header-image" src="assets/404.webp" alt="a 404 image" width="200"
+                        <img class="rounded-header-image" src="{{ "assets/404.webp" | absURL }}" alt="a 404 image" width="200"
                             height="200">
                     </div>
                     <div class="eight wide column huge centered">
@@ -43,7 +43,7 @@
         <div class="ui fluid grid">
             <div class="three wide column"></div>
             <div class="button-primary">
-            <a href=" http://github.com/guillaumemaiano">Get to my Github</a>
+            <a href="https://github.com/guillaumemaiano">Get to my Github</a>
             </div>
         </div>
     </div>
