@@ -1,0 +1,27 @@
+<div class="pusher flex-container segments">
+    <div class="ui grid stackable">
+        <!-- I am not sure I like this SemanticUI convention of empty columns; Bootstrap offsets sound better? -->
+        <div class="one wide column"></div>
+        <div class="ui article content segment raised ten wide column">
+            {{.Content}}
+        </div>
+        <div class="four wide column">
+            {{$latestPost := first 1 (where .Site.RegularPages "Type" "post")}}
+            {{$latestArticle := index $latestPost 0}}
+            {{ with $latestPost}}
+            <div class="latestArticle">
+                <h2><a href="{{ $latestArticle.RelPermalink }}">{{$latestArticle.Title}}</a></h2>
+                <p>{{$latestArticle.Date.Format "January 2, 2006"}}</p>
+                {{ $lines := split $latestArticle.Content "\n" }}
+                {{ $excerpt := delimit (first 15 $lines) "\n" }}
+                {{ $excerpt }}
+                <br>
+                <br>
+                <a href="{{ $latestArticle.RelPermalink }}"> <div class="button-primary"><i class="fas fa-arrow-circle-right"></i>Read more</div></a></h2>
+                <!--{{$latestArticle.Content}}-->
+            </div>
+            {{end}}
+        </div>
+        <div class="one wide column"></div>
+    </div>
+</div>

@@ -1,0 +1,27 @@
+    <!-- Scripts and stuff -->
+    <!-- I'll probably need JQuery... -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- I'm not sure I really need SemanticUI's JS. This might be removed later. -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js'></script>
+    <!-- Highlighting is a major component of readability in tech blogs -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js'></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => { hljs.highlightAll(); });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            var fragment = window.location.hash;
+            // if (fragment) {
+            //     console.log(fragment.substring(1));
+            // }
+            $('.footermenu .item').tab();
+            // if (fragment) {
+            //     console.log(fragment.substring(1));
+            // }
+            if (fragment) {
+                //$('.footermenu .item[data-tab="' + fragment.substring(1) +'"]').tab('show');
+                //$('.footermenu .item[data-tab="'+ fragment.substring(1)+'"]').tab();
+                $('.footermenu .item').tab('change tab', fragment.substring(1));
+            }
+    });
+    </script>

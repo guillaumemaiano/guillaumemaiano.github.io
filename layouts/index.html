@@ -1,0 +1,21 @@
+{{define "main"}}
+<div class="ui tab active" data-tab="home" id="home">
+    {{ partial "content.html" . }}
+</div>
+<div class="ui tab" data-tab="list" id="list">
+    <div class="pusher flex-container segments">
+        <div class="ui grid stackable">
+            <div class="one wide column"></div>
+            <div class="ui article content segment raised ten wide column">
+                <h1>All I wrote</h1>
+                {{ range .Site.RegularPages}}
+                <h2><a href="{{ .RelPermalink}}">{{.Title}}</a></h2>
+                <p>{{.Summary}}</p>
+                {{end}}
+            </div>
+            <div class="five wide column"></div>
+        </div>
+    </div>
+</div>
+
+{{end}}

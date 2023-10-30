@@ -1,3 +1,24 @@
+/*
+The plan:
+Dark Mode: 
+Background tech navy 1E2A38
+Font soft gray A4AEB5
+Headers/Hilights teal 317C8A
+Sec Hili: Olive: 6B8E23
+CTA Primary: 	color: #3451B2; (muted Royal blue)
+CTA Secondary: color: #6A0000; (darker dark red)
+Secondary text: #B2B2C1 (darker neutral grey)
+
+Bright mode: 
+Background light gray D3D3DE
+Font dark blue gray 2C3E50
+Headers/Hilights Royal blue 4169E1
+Sec Hili: Soft gold DAA520
+CTA Primary: 	color: #3451B2; (muted Royal blue)
+CTA Secondary: color: #FFA500; (deep orange)
+Secondary text: #E8E8ED (neutral grey)
+*/
+
 /* General styles */
 body {
 	background-color: #D3D3DE; /* Grey is good. */
@@ -5,6 +26,11 @@ body {
 	font-family: 'Montserrat', 'Arial', sans-serif; /* Monserrat is great, if it fails to load get Arial, and if THAT fails, get any sans-serif */
 	display: flex;
 	flex-direction: column;
+}
+
+body .ui.inverted {
+	background-color: #1E2A38;/* tech navy */
+	color: #A4AEB5;
 }
 
 body, html {
@@ -27,6 +53,11 @@ body .ui.segment {
 	color: #DAA520; /* a soft gold to compliment the royalness of blue */
 	padding: 15px;
 	text-align: center;
+}
+.header.ui.inverted {
+	/*background-color: #F5DEB3;  A beige */
+	background-color: #317C8A;
+	color:#1E2A38;
 }
 
 /* button styles */
@@ -71,10 +102,54 @@ body .ui.button.button-primary a:hover, body .ui.button.button-primary a:active 
 	border-radius: 3pt;
 }
 
+.github-button {
+	background-color: #24292e; /* Github Blue */
+	color: #F0F0F0;
+	box-shadow: 0pt 0pt 5pt rgba(0 0 0 0.2);
+	border: none;
+	padding: 10pt 15pt;
+	cursor: pointer;
+	border-radius: 3pt;
+}
+
+.github-button:hover {
+	background-color: #4169E1; /* Royal Blue */
+	color: #0F0F0F;
+	box-shadow: 0pt 0pt 5pt rgba(0 0 0 0.2);
+}
+
+.fab.fa-github {
+	/*color:#24292e;*/
+	margin-right: 10pt;
+	margin-left: 0pt;
+}
+.fas.fa-arrow-circle-right {
+	/*color:#24292e;*/
+	margin-right: 10pt;
+	margin-left: 0pt;
+}
+
+.fas.fa-arrow-circle-right:hover {
+	color: #4169E1;
+	background-color: #FFA500;
+}
+
+.fab.fa-github:hover {
+	color: #4169E1;
+}
+
 .rounded-header-image {
 	width: 100pt;
 	height: 100pt;
 	border-radius: 20pt;
+}
+
+.latestArticle {
+	color:#E8E8ED;
+	background-color: #FFA500;
+	border-radius: 2pt;
+	border: #E8E8ED;
+	padding: 15pt;
 }
 
 .footer {

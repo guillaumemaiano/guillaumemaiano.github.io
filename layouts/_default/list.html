@@ -1,0 +1,16 @@
+{{ define "main"}}
+<div class="pusher flex-container segments">
+    <div class="ui grid stackable">
+        <!-- I am not sure I like this SemanticUI convention of empty columns; Bootstrap offsets sound better? -->
+        <div class="one wide column"></div>
+        <div class="ui article content segment raised ten wide column">
+            <h1>Every post in the {{.Section}} section</h1>
+            {{ range .Site.RegularPages}}
+            <h2><a href="{{ .RelPermalink}}">{{.Title}}</a></h2>
+            <p>{{.Summary}}</p>
+            {{end}}
+        </div>
+        <div class="one wide column"></div>
+    </div>
+</div>
+{{end}}

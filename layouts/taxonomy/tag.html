@@ -1,0 +1,8 @@
+{{define "main"}}
+<h1>Tag: {{.Title}}</h1>
+<ul>
+    {{range .Data.Pages}}
+    <li><a href=".RelPermalink">{{.Title}}</a>,Tagged under: {{with .Params.tags}}{{range .}}<span>{{.}}</span>{{end}}{{end}}}</li>
+    {{end}}
+</ul>
+{{end}}
