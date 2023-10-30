@@ -1,3 +1,13 @@
 {{define "main"}}
-{{ partial "content.html" . }}
+<div class="ui tab active" data-tab="home">
+    {{ partial "content.html" . }}
+</div>
+<div class="ui tab" data-tab="list">
+    <h1>Tout ce que j'ai écrit</h1>
+    {{ range .Site.RegularPages}}
+    <h2><a href="{{ .RelPermalink}}">{{.Title}}</a></h2>
+    <p>{{.Summary}}</p>
+    {{end}}
+</div>
+
 {{end}}
