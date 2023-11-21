@@ -1,0 +1,10 @@
+{
+  "name": "GithubPages Hugo",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": ".."
+  },
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash"
+  }
+}
