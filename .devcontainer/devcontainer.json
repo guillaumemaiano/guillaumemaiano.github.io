@@ -17,6 +17,7 @@
       "source.fixAll":  true
     }
   },
+  "forwardPorts": [1313],
   "postCreateCommand": "hugo version",
   "remoteUser": "vscode"
 }
