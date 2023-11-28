@@ -7,3 +7,9 @@ run apt-get update \
   && sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)" \
   && apt-get clean -y && rm -rf /var/lib/apt/lists/* \
   && chsh -s $(which zsh)
+
+# While the shell is now ZSH in the codespace, I also want to use ZSH for my RUN commands
+SHELL ["/usr/bin/zsh", "-c"]
+
+# Make dialog available for further use
+ENV DEBIAN_FRONTEND=dialog
