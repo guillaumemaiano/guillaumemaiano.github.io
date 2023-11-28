@@ -1,0 +1,2 @@
+FROM mcr.microsoft.com/vscode/devcontainers/base:0-buster
+ENV DEBIAN_FRONTEND=noninteractive
