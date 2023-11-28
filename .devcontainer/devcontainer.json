@@ -16,5 +16,7 @@
     "editor.codeActionsOnSave": {
       "source.fixAll":  true
     }
-  }
+  },
+  "postCreateCommand": "hugo version",
+  "remoteUser": "vscode"
 }
