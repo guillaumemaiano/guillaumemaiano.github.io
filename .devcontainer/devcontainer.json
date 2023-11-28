@@ -1,0 +1,23 @@
+{
+  "name": "GithubPages Hugo",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": ".."
+  },
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash",
+    "terminal.integrated.defaultProfile.linux": "zsh",
+    "terminal.integrated.profiles.linux":{
+      "zsh": {
+        "path": "/usr/bin/zsh"
+      }
+    },
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll":  true
+    }
+  },
+  "forwardPorts": [1313],
+  "postCreateCommand": "hugo version",
+  "remoteUser": "vscode"
+}
