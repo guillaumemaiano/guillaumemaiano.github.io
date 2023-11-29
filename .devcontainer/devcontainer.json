@@ -1,5 +1,8 @@
 {
   "name": "GithubPages Hugo",
+  "extensions": [
+    "ms-azuretools.vscode-docker"
+  ],
   "build": {
     "dockerfile": "Dockerfile",
     "context": ".."
