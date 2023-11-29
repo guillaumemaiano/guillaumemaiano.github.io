@@ -4,11 +4,6 @@ ENV DEBIAN_FRONTEND=noninteractive
 # Requirements: Hugo, Zsh, Git (wget serves to pull Oh-My-Zsh)
 RUN apt-get update \
   && apt-get install -y --no-install-recommends hugo zsh wget git \
-  && if [ ! -d "/root/.oh-my-zsh" ]; then \
-       sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)" || true; \
-     else \
-       echo "Oh My Zsh is already installed. Skipping installation."; \
-     fi \
   && apt-get clean -y && rm -rf /var/lib/apt/lists/* \
   && chsh -s $(which zsh)
 
