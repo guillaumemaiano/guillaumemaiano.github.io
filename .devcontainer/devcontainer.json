@@ -2,7 +2,8 @@
   "name": "GithubPages Hugo",
   "extensions": [
     "ms-azuretools.vscode-docker",
-    "sibiraj-s.vscode-scss-formatter"
+    "sibiraj-s.vscode-scss-formatter",
+    "eamodio.gitlens"
   ],
   "build": {
     "dockerfile": "Dockerfile",
