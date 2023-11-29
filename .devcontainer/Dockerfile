@@ -5,11 +5,12 @@ ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update \
   && apt-get install -y --no-install-recommends hugo zsh wget git \
   && if [ ! -d "/root/.oh-my-zsh" ]; then \
-       sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"; \
+       sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)" || true; \
      else \
-       echo "Oh My Zsh is already installed."; \
+       echo "Oh My Zsh is already installed. Skipping installation."; \
      fi \
-  && apt-get clean -y && rm -rf /var/lib/apt/lists/*
+  && apt-get clean -y && rm -rf /var/lib/apt/lists/* \
+  && chsh -s $(which zsh)
 
 # While the shell is now ZSH in the codespace, I also want to use ZSH for my RUN commands
 SHELL ["/usr/bin/zsh", "-c"]
