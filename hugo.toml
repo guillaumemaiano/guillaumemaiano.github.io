@@ -1,5 +1,5 @@
 baseURL = 'https://guillaumemaiano.github.io/'
-languageCode = 'en-US'
+locale = 'en-US'
 defaultContentLanguage = 'en'
 theme = 'T480'
 enableRobotsTXT = true
