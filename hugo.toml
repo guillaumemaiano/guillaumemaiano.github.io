@@ -1,5 +1,36 @@
-baseURL = 'https://guillaumemaiano.github.io'
-languageCode = 'fr-FR'
-title = 'Gems on Github Pages'
+baseURL = 'https://guillaumemaiano.github.io/'
+languageCode = 'en-US'
+defaultContentLanguage = 'en'
+theme = 'T480'
+enableRobotsTXT = true
+
 [taxonomies]
-  tag = "tags"
+  tag = 'tags'
+
+[services.rss]
+  limit = -1
+
+[outputs]
+  home = ['HTML', 'RSS']
+
+[languages.en]
+  title = 'Guillaume Maiano - IT Specialist'
+  weight = 1
+
+[languages.fr]
+  title = 'Guillaume Maiano - Ingénieur en informatique'
+  weight = 2
+
+[cascade]
+  [cascade.params]
+    author = 'Guillaume Maiano'
+
+[[menus.main]]
+  name = 'DEVLOG'
+  pageRef = '/journal'
+  weight = 10
+
+[[menus.main]]
+  name = 'ABOUT'
+  pageRef = '/about'
+  weight = 20
