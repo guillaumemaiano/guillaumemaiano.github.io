@@ -1,1 +1,17 @@
-.hugo_build.lock
+## Hugo
+# Build lock
+**/.hugo_build.lock
+# Hugo output
+public/
+
+# Hugo cache
+**/resources/_gen/
+
+
+## Tailwind
+# Node
+**/node_modules/
+
+# OS
+.DS_Store
+Thumbs.db
